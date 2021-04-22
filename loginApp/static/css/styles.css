@@ -1,0 +1,46 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Neo둥근모', sans-serif;
+    border-radius: 6px;
+}
+
+body {
+    margin: 0;
+    background-color: rgba(0,0,0,0.96);
+}
+
+.login-form {
+    width:300px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    padding: 20px;
+    text-align: center;
+    border: none;
+}
+
+.text-field {
+    font-size: 14px;
+    padding: 10px;
+    border: none;
+    width: 260px;
+    margin-bottom: 10px;
+}
+
+.btn-primary {
+    border: none;
+    background-color: #8AE511;
+    padding: 7px;
+    width: 260px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.links {
+    text-align: center;
+}
+
+.links a {
+    font-size: 13px;
+    color: #8AE511;
+}

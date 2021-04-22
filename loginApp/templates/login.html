@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <link href="https://fonts.googleapis.com/earlyaccess/notosanskr.css" rel="stylesheet">
+    <title>Login</title>
+</head>
+<body>
+    {% if error %}
+    <p style="color:red">{{ error }}</p> 
+    {% endif %}
+    <div class=" login-form text-center">
+        <form method="POST">
+            {% csrf_token %}
+            <input type="text" name="username" id="username" class="text-field" placeholder="ID">
+            <input type="password" name="password" id="password" class="text-field" placeholder="Password">
+            <input type="submit" value="Login" class="btn btn-primary">
+        </form>
+        <div class="links">
+            <a href="{% url 'signup' %}">SignUp</a>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript" src="{% static 'js/bootstrap.js' %}"></script>
+</body>
+</html>

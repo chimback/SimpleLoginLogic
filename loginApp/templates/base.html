@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Home</title>
+</head>
+<body>
+<h2>Test Website</h2>
+{% if user.is_authenticated %}<!-- 만약 로그인이 되어있는 상태이면 -->
+{{user.last_name}} {{user.first_name}}님 환영합니다. <!-- 다음과같이 출력 -->
+{% endif %}
+<hr>
+<hr> <!--  아랫부분(고정) -->
+</body>
+</html>
