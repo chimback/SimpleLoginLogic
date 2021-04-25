@@ -10,6 +10,9 @@ class SignupForm(ModelForm):
         model=User
         widgets = {'password':forms.PasswordInput}
         fields = ['username', 'password', 'last_name', 'first_name', 'email']
+    
+    def create_user(self, data):
+        pass    
 
 class SigninForm(ModelForm):
     class Meta:
